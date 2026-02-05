@@ -167,6 +167,6 @@ button:active {
 
 .card-row {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: stretch;
 }
