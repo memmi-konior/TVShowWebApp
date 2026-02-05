@@ -1,5 +1,5 @@
 body {
-    background-color: #8f8d92;
+    background-color: #eeeeee;
     font-family: 'Courier New', Courier, monospace
 }
 
@@ -13,6 +13,8 @@ h1 {
     width: 100%;
     margin-bottom: 0%;
 }
+
+
 
 p {
     font-weight: bold;
@@ -126,6 +128,12 @@ button:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+#homeHeading h1 {
+    cursor: pointer;
+
 }
 
 #tvIcon {
@@ -134,7 +142,7 @@ button:active {
 
 .card {
     /* Add shadows to create the "card" effect */
-    background-color: #fefdffbf;
+    background-color: #ffffffbf;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38);
     transition: 0.3s;
     margin: 20px;
@@ -169,4 +177,58 @@ button:active {
     display: flex;
     gap: 15px;
     align-items: stretch;
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    #homeHeading h1 {
+        font-size: 3rem;
+    }
+
+    #homeSub {
+        font-size: medium;
+    }
+
+    input[name="query"] {
+        font-size: medium;
+
+    }
+
+    button {
+        font-size: medium;
+    }
+
+    .container {
+        font-size: small;
+    }
+}
+
+@media (max-width: 800px) {
+    #homeHeading h1 {
+        font-size: 1.5rem;
+    }
+
+    #homeSub {
+        font-size: x-small;
+    }
+
+    input[name="query"] {
+        font-size: x-small;
+        width: 250px;
+    }
+
+    button {
+        font-size: x-small;
+    }
+
+    #showImage {
+        display: none;
+    }
+
+    .cardMetaData {
+        flex-direction: column;
+    }
+
+    .container {
+        font-size: x-small;
+    }
 }
