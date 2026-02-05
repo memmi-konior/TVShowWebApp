@@ -1,0 +1,172 @@
+body {
+    background-color: #8f8d92;
+    font-family: 'Courier New', Courier, monospace
+}
+
+h1 {
+    font-family: "Monoton", sans-serif;
+    font-size: 7rem;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgba(225, 255, 0, 0.682);
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+p {
+    font-weight: bold;
+}
+
+form {
+    justify-self: center;
+    padding: 12px;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input[name="query"] {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+    height: 2em;
+    width: 500px;
+    border-style: groove;
+    border-width: medium;
+    padding-left: 10px;
+}
+
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+}
+
+button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+@media (min-width: 768px) {
+    button {
+        padding: 0.25em 0.75em;
+    }
+}
+
+.center {
+    text-align: center;
+
+}
+
+.cardMetaData {
+    display: flex;
+    justify-content: space-between;
+    align-content: end;
+    margin-right: 1.2rem;
+
+}
+
+#homeSub {
+    display: inline-block;
+    font-size: larger;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 2.5s steps(65, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 65ch
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+#homeHeading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tvIcon {
+    width: 30%;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    background-color: #fefdffbf;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.38);
+    transition: 0.3s;
+    margin: 20px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.788);
+}
+
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 1px;
+}
+
+.topContainer h2,
+.topContainer p {
+    margin: 1px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 1.2rem;
+}
+
+.card-row {
+    display: flex;
+    gap: 15px;
+    align-items: stretch;
+}
