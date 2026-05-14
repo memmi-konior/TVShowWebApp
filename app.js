@@ -11,7 +11,7 @@ function returnHome() {
     tvIcon.style.display = "block";
 }
 
-// paraeter = an array of objects (the search result)
+// parameter = an array of objects (the search result)
 function assembleCard(searches) {
     for (let search of searches) {
 
